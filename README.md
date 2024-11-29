@@ -3,12 +3,7 @@
 
 # Setup:
 
-Invite the discord bot through our website > 
-
-
-
-
-
+Invite the discord bot through our website > https://eduraai.vercel.app
 
 
 
