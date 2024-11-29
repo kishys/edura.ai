@@ -1,0 +1,77 @@
+import discord
+from discord.ext import commands
+import google.generativeai as genai
+
+discord_api_key = ""
+gemini_api_key = ""
+
+genai.configure(api_key=gemini_api_key)
+model = genai.GenerativeModel('gemini-pro')
+chat = model.start_chat(history=[])
+
+intents = discord.Intents.default()
+intents.messages = True
+intents.message_content = True
+
+bot = commands.Bot(command_prefix="/", intents=intents)
+
+@bot.event
+async def on_ready():
+    await bot.tree.sync()
+    print(f'Logged in as {bot.user.name}')
+
+@bot.tree.command(name="AI Powered Tutor", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Educational Resource Hub", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Flashcard Generator", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Study Clock App", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Note Enhancing Platform", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Homework Tracker", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Quiz Creator", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
+
+@bot.tree.command(name="Interactive Timeline", description="Chat with the bot")
+async def ask(interaction: discord.Interaction, message: str):
+    await interaction.response.defer()
+    response = chat.send_message(message)
+    await interaction.followup.send(response.text)
+bot.run(discord_api_key)
