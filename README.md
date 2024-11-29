@@ -6,7 +6,8 @@
 Invite the discord bot through our website > https://eduraai.vercel.app
 
 
-
+# Frameworks:
+Some of the frameworks that we used includes: Google Gemini, Discord, NextJS, Tailwind CSS, and Chatbase.co. 
 
 
 
@@ -30,3 +31,5 @@ We have made some commands that allow you, as the user to help you with your stu
 
 
 If you need help with the bot, you can contact us at: edurateam@gmail.com
+
+If you also want to know more about the bot, this slideshow can help! https://www.canva.com/design/DAGXytEFOQo/ArHsI9vtTGF3j0UMGZNXwA/edit?utm_content=DAGXytEFOQo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
