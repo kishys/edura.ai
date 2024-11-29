@@ -1,5 +1,6 @@
 # edura.ai
 
+
 # Setup:
 
 Invite the discord bot through our website > 
@@ -15,8 +16,7 @@ Invite the discord bot through our website >
 
 
 
-
-# Using the bot:
+# Our Commands:
 
 We have made some commands that allow you, as the user to help you with your studies. Our commands include:
 
@@ -35,5 +35,9 @@ This command allows you to input your notes, and it will add on to them, with mo
 5. /quiz
 This command generates a quiz based off of a topic of your choice.
 
-6. study-clock-app
+6. /study-clock-app
 This command sets up a Pomodoro session for you, with times of your choosing.
+
+
+
+If you need help with the bot, you can contact us at: edurateam@gmail.com
